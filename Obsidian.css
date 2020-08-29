@@ -32,8 +32,8 @@
 .workspace-split.mod-vertical{
     overflow-x:auto; 
 }
-.workspace-split.mod-root > .workspace-leaf,
-.workspace-split.mod-root > .workspace-split{
+.workspace-split > .workspace-leaf,
+.workspace-split > .workspace-split{
     min-width: 550px;  /*set card width when overflowing*/
 }
 
@@ -50,17 +50,22 @@
 .workspace-leaf{background: var(--content-inactive);}
 .workspace-leaf.mod-active{ background: var(--content-active);}
 
-.markdown-preview-view,
-.CodeMirror-wrap{
+.markdown-preview-view{
     padding: 20px;
 }
-.markdown-source-view,
+.markdown-source-view{
+    padding: 0px 20px;
+}
 .CodeMirror-scroll,
-.CodeMirror-sizer{
+.CodeMirror-wrap{
     padding: 0px;
     margin: 0px;
 }
-.CodeMirror-sizer{border-right-width: 0px !important;}
+.CodeMirror-sizer{
+    border-right-width: 0px !important;
+    padding: 20px 0px;
+    
+}
 
 /* Embed content */
 .markdown-embed{
@@ -259,14 +264,15 @@ so that they look more like plain text */
 .cm-header-4,
 .cm-header-5,
 .cm-header-6,
-.cm-inline-code,
 .cm-math{
     line-height: 1.5rem !important;
     font-size: 1.0rem !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
-
+.cm-inline-code{
+    font-size: 0.9rem !important;
+}
 
 /* make latex math codes upright*/
 .cm-math{font-style: normal !important;}
