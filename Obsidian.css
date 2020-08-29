@@ -299,7 +299,7 @@ a.link:hover,a.internal-link:hover{
 .nav-action-button{
     padding: 3px 8px !important;
     margin: 0px 4px !important;
-    border-radius: 2px !important;
+    border-radius: 2px ;
 }
 
 /* Search results in tabs */
@@ -313,7 +313,7 @@ a.link:hover,a.internal-link:hover{
     background-color:var(--search-result);
     border-radius: 2px;
     padding: 5px;
-    margin: 0px 5px 5px 5px;
+    margin: 0px 10px 10px 10px;
 }
 .search-result-container{
     margin: 0px !important;
@@ -323,18 +323,17 @@ a.link:hover,a.internal-link:hover{
     background-color:var(--matched-text);
 }
 .side-dock-collapsible-section-header{
-    font-weight: bold !important;
     margin: 5px;
 }
 
 
 /* Prompt and Setting Panel*/
 .prompt-input{
-    border-radius: 4px !important;
+    border-radius: 2px !important;
 }
 .prompt,
 .modal{
-    border-radius: 4px !important;
+    border-radius: 2px;
     border: solid rgb(0,0,0,0.5);
     border-width: 1px;
 }
@@ -344,7 +343,7 @@ a.link:hover,a.internal-link:hover{
 
 /* Hide status bar */
 .status-bar {
-    display:none !important;
+    display:none;
 }
 
 /* make the resize handler smaller */
@@ -362,8 +361,8 @@ a.link:hover,a.internal-link:hover{
 .workspace-leaf,
 .workspace-split,
 .workspace-leaf-content {
-    padding-right: 0px !important;
-    padding-left: 0px !important;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 /* Smaller scroll-bars*/
@@ -371,7 +370,7 @@ a.link:hover,a.internal-link:hover{
     background: transparent;
     width: 5px;
     height: 5px;
-    display:none !important;
+    display:none;
 }
 
 /*Menu Item*/
