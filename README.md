@@ -1,7 +1,6 @@
-# Pure theme for Obsidian.md
+# Obsidian-Cardflow-theme
 
-A clean theme for `Obsidian.md`.
-
+A clean `.css` theme for `Obsidian.md`.
 
 ## Screenshots
 
@@ -11,6 +10,6 @@ A clean theme for `Obsidian.md`.
 
 ## Installation
 
-1. Download obsidian.css to your Obsidian vault folder.
-2. `Roboto` font is required. 
+1. `Roboto` font is required. 
+2. Download obsidian.css to your Obsidian vault folder.
 3. In Obsidian, click Settings->Plugins and turn on "Custom CSS".
