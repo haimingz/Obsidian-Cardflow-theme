@@ -21,6 +21,18 @@
     --edit-font: 'Roboto','Monaco','-apple-system','思源黑体','Microsoft Yahei';
 }
 
+/* Hide things */
+
+/* Delete this if you don't like to hide status bar */
+.status-bar{
+    display:none; 
+}
+
+/* Delete this if you don't like to hide scrollbars */
+::-webkit-scrollbar{
+    display:none; 
+}
+
 
 /* ------------ MD ------------*/
 
@@ -186,19 +198,6 @@ a.link:hover,a.internal-link:hover{
 .markdown-preview-view{
     padding: 20px;
 }
-.markdown-source-view{
-    padding: 0px 20px;
-}
-.CodeMirror-scroll,
-.CodeMirror-wrap{
-    padding: 0px;
-    margin: 0px;
-}
-.CodeMirror-sizer{
-    border-right-width: 0px !important;
-    padding: 20px 0px;
-    
-}
 
 /* Embed content */
 .markdown-embed{
@@ -341,11 +340,6 @@ a.link:hover,a.internal-link:hover{
     background: rgb(0,0,0,0.4);
 }
 
-/* Hide status bar */
-.status-bar {
-    display:none;
-}
-
 /* make the resize handler smaller */
 .workspace-split.mod-horizontal > * > .workspace-leaf-resize-handle {
     height:1px;
@@ -361,8 +355,8 @@ a.link:hover,a.internal-link:hover{
 .workspace-leaf,
 .workspace-split,
 .workspace-leaf-content {
-    padding-right: 0px;
-    padding-left: 0px;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
 }
 
 /* Smaller scroll-bars*/
@@ -370,7 +364,6 @@ a.link:hover,a.internal-link:hover{
     background: transparent;
     width: 5px;
     height: 5px;
-    display:none;
 }
 
 /*Menu Item*/
