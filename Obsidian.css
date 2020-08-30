@@ -1,3 +1,4 @@
+/* Define shades for dark/light mode as you like */
 .theme-light{
     --matched-text:rgba(255, 255, 0, 0.2);
     --search-result:rgba(200,200,200,0.3);
@@ -9,32 +10,34 @@
 }
 .theme-dark{    
     --matched-text:rgba(255, 255, 0, 0.2);
-    --search-result:rgba(80, 80, 80, 0.5);
+    --search-result:rgba(39, 39, 39, 0.5);
     --hyperlink:rgb(22, 127, 255);
     --border:rgb(37, 37, 37);
-    --tabs: rgb(43, 43, 43);
-    --content-active: rgb(61, 61, 61);
-    --content-inactive: rgb(53, 53, 53);
+    --tabs: rgb(10, 10, 10);
+    --content-active: rgb(29, 29, 29);
+    --content-inactive: rgb(24, 24, 24);
 }
+
+/* Define font families as you like */
 .theme-light,.theme-dark{
-    --preview-font:'Roboto','-apple-system','思源黑体','Microsoft Yahei';
-    --edit-font: 'Roboto','Monaco','-apple-system','思源黑体','Microsoft Yahei';
+    --preview-font:'Roboto','Ubuntu','-apple-system','Source Han Sans','思源黑体','Microsoft Yahei';
+    --edit-font: 'Roboto', 'Ubuntu','-apple-system','Source Han Sans','思源黑体','Microsoft Yahei';
 }
 
 /* Hide things */
 
-/* Delete this if you don't like to hide status bar */
+/* Uncomment this to hide status bar 
 .status-bar{
     display:none; 
-}
+}*/
 
-/* Delete this if you don't like to hide scrollbars */
+/* Uncomment this to hide scrollbars 
 ::-webkit-scrollbar{
     display:none; 
-}
+}*/
 
 
-/* ------------ MD ------------*/
+/* ------------Section 1: Markdown Styles -------------*/
 
 /* ------ Editor mode ------ */
 
@@ -42,8 +45,8 @@
     font-family: var(--edit-font);
 }
 
-/* make editor mode lines equal in height 
-so that they look more like plain text */
+/* make lines equal in height 
+so it look like editing plain text */
 
 .HyperMD-header.HyperMD-header-1.CodeMirror-line,
 .HyperMD-header.HyperMD-header-2.CodeMirror-line,
@@ -80,7 +83,7 @@ so that they look more like plain text */
 /* make latex math codes upright*/
 .cm-math{font-style: normal !important;}
 
-/* make footnote left-aligned*/
+/* remove the too-much indent for footnote */
 .HyperMD-footnote{padding-left: 4px !important;}
 
 
@@ -91,7 +94,7 @@ so that they look more like plain text */
 }
 
 
-/* headers in preview mode */
+/* headers */
 
 h1{
     font-size: 1.5rem !important;
@@ -132,7 +135,7 @@ p,ul,ol{
     margin: 0px !important;
 }
 
-/* make image smaller by default */
+/* make image smaller and center-aligned by default */
 
 img{
     max-width:80% !important;
@@ -166,20 +169,23 @@ a.link:hover,a.internal-link:hover{
     vertical-align: baseline;
 }
 
-/* ------------ UI ------------*/
+/* ------------- Section 2: UI tweaking --------------*/
 
+/* add 1px border on the top edge because otherwise it looks wired in Windows*/
 .app-container{
     border-top: solid var(--border) !important;
-    border-width:1px !important;
+    border-width:1px !important; 
 }
 
-/* Overflow of cards in x direction*/
+/* Flow of cards */
 .workspace-split.mod-vertical{
     overflow-x:auto; 
 }
+/* Set the minimum width of the cards when overflowing
+(One known problem is that one cannot drag the cards wider) */
 .workspace-split > .workspace-leaf,
 .workspace-split > .workspace-split{
-    min-width: 550px;  /*set card width when overflowing*/
+    min-width: 500px; /* Change this value as you wish */
 }
 
 /*Content Card*/
@@ -190,13 +196,14 @@ a.link:hover,a.internal-link:hover{
 .view-header,
 .view-header-title-container::after,
 .view-content{
-    background: transparent !important; /*make content bg transparent*/
+    background: transparent !important; /*make UI elements transparent*/
 }
+/*Set card bg */
 .workspace-leaf{background: var(--content-inactive);}
 .workspace-leaf.mod-active{ background: var(--content-active);}
 
 .markdown-preview-view{
-    padding: 20px;
+    padding: 25px;
 }
 
 /* Embed content */
@@ -231,7 +238,7 @@ a.link:hover,a.internal-link:hover{
     background-color: var(--content-active);
     border: solid var(--border) !important;
     border-width: 1px !important;
-    border-radius: 4px !important;
+    border-radius: 0px !important;
 }
 .popover.hover-popover.is-loaded>.markdown-embed{
     margin: 0px !important;
@@ -263,7 +270,7 @@ a.link:hover,a.internal-link:hover{
     border-width: 1px !important;
 }
 .side-dock-settings{
-    margin-bottom: 5px !important;
+    margin-bottom: 25px !important;
 }
 
 /* Tabs */
