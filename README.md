@@ -1,6 +1,6 @@
 # Obsidian-Cardflow-theme
 
-A clean `.css` theme for `Obsidian.md`.
+A clean theme for `Obsidian.md`.
 
 ## Screenshots
 
@@ -10,6 +10,6 @@ A clean `.css` theme for `Obsidian.md`.
 
 ## Installation
 
-1. `Roboto` font is required. 
+1. The theme recommend using `Roboto` font (Download via [Google Fonts](https://fonts.google.com/specimen/Roboto)). 
 2. Download obsidian.css to your Obsidian vault folder.
 3. In Obsidian, click Settings->Plugins and turn on "Custom CSS".
