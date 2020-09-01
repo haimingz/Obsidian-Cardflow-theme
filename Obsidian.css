@@ -172,6 +172,7 @@ a.link:hover,a.internal-link:hover{
 /*blockquote*/
 blockquote{
     padding: 0px 15px !important;
+    margin: 10px 20px;
 }
 
 
