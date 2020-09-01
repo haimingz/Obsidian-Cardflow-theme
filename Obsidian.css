@@ -6,7 +6,7 @@
     --border:rgb(216, 216, 216);
     --tabs: rgb(240, 241, 243);
     --content-active: rgb(255, 255, 255);
-    --content-inactive: rgb(250, 250, 250);
+    --content-inactive: rgb(255, 255, 255);
 }
 .theme-dark{    
     --matched-text:rgba(255, 255, 0, 0.2);
@@ -14,7 +14,7 @@
     --hyperlink:rgb(22, 127, 255);
     --border:rgb(56, 56, 56);
     --tabs: rgb(10, 10, 10);
-    --content-active: rgb(29, 29, 29);
+    --content-active: rgb(24, 24, 24);
     --content-inactive: rgb(24, 24, 24);
 }
 
@@ -132,7 +132,7 @@ h6{
 
 /* lists */
 p,ul,ol{
-    margin: 0px !important;
+    margin: 15px 0px !important;
 }
 
 /* make image smaller and center-aligned by default */
@@ -204,6 +204,20 @@ a.link:hover,a.internal-link:hover{
 
 .markdown-preview-view{
     padding: 25px;
+}
+.markdown-source-view{
+    padding: 25px;
+}
+.CodeMirror.cm-s-obsidian.CodeMirror-wrap,
+.CodeMirror-code{
+    padding: 0px;
+}
+.CodeMirror-scroll{
+    padding-right: 30px;
+}
+.CodeMirror-sizer{
+    border-right-width: 0px !important;
+    padding: 0px !important;
 }
 
 /* Embed content */
