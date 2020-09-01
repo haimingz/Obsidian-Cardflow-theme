@@ -169,6 +169,12 @@ a.link:hover,a.internal-link:hover{
     vertical-align: baseline;
 }
 
+/*blockquote*/
+blockquote{
+    padding: 0px 15px !important;
+}
+
+
 /* ------------- Section 2: UI tweaking --------------*/
 
 /* add 1px border on the top edge because otherwise it looks wired in Windows*/
