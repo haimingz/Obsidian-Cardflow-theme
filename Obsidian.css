@@ -134,6 +134,9 @@ h6{
 p,ul,ol{
     margin: 15px 0px !important;
 }
+li>ul,li>ol,li>p{
+    margin: 0px !important;
+}
 
 /* make image smaller and center-aligned by default */
 
@@ -173,6 +176,9 @@ a.link:hover,a.internal-link:hover{
 blockquote{
     padding: 0px 15px !important;
     margin: 10px 20px;
+    border-radius: 0px !important;
+    border-left-width: 4px !important;
+
 }
 
 
@@ -192,9 +198,8 @@ blockquote{
 (One known problem is that one cannot drag the cards wider) */
 .workspace-split > .workspace-leaf,
 .workspace-split > .workspace-split{
-    min-width: 500px; /* Change this value as you wish */
+    min-width: 550px; /* Change this value as you wish */
 }
-
 /*Content Card*/
 .view-header{
     border: 0px !important; /*remove border under file title*/
@@ -210,10 +215,10 @@ blockquote{
 .workspace-leaf.mod-active{ background: var(--content-active);}
 
 .markdown-preview-view{
-    padding: 25px;
+    padding: 0px 25px;
 }
 .markdown-source-view{
-    padding: 25px;
+    padding: 15px 25px;
 }
 .CodeMirror.cm-s-obsidian.CodeMirror-wrap,
 .CodeMirror-code{
@@ -235,7 +240,7 @@ blockquote{
     background: transparent !important;
 }
 .markdown-embed-content{
-    padding: 15px !important;
+    padding: 0px 15px !important;
 }
 .markdown-embed-title{
     padding-top: 3px !important;
