@@ -26,10 +26,9 @@
 
 /* Hide things */
 
-/* Uncomment this to hide status bar 
 .status-bar{
     display:none; 
-}*/
+}
 
 /* Uncomment this to hide scrollbars 
 ::-webkit-scrollbar{
@@ -141,7 +140,7 @@ li>ul,li>ol,li>p{
 /* make image smaller and center-aligned by default */
 
 img{
-    max-width:80% !important;
+    max-width:100% !important;
     margin:0px auto;
     text-align: center;
     display: table-cell;
@@ -192,7 +191,8 @@ blockquote{
 
 /* Flow of cards */
 .workspace-split.mod-vertical{
-    overflow-x:auto; 
+    overflow-x:auto;
+    overflow-y:hidden;
 }
 /* Set the minimum width of the cards when overflowing
 (One known problem is that one cannot drag the cards wider) */
@@ -214,12 +214,15 @@ blockquote{
 .workspace-leaf{background: var(--content-inactive);}
 .workspace-leaf.mod-active{ background: var(--content-active);}
 
+
 .markdown-preview-view{
     padding: 0px 25px;
 }
 .markdown-source-view{
     padding: 15px 25px;
 }
+
+
 .CodeMirror.cm-s-obsidian.CodeMirror-wrap,
 .CodeMirror-code{
     padding: 0px;
@@ -383,6 +386,7 @@ blockquote{
 .workspace-split.mod-right-split > .workspace-leaf-resize-handle {
     background:var(--border) ;
     width:1px;
+    height: 100%;
 }
 .workspace-tabs,
 .workspace-leaf,
