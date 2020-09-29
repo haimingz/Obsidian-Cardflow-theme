@@ -70,7 +70,7 @@ so it look like editing plain text */
 .cm-header-5,
 .cm-header-6,
 .cm-math{
-    line-height: 1.5rem !important;
+    line-height: 1.65rem !important;
     font-size: 1.0rem !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -182,6 +182,14 @@ blockquote{
 
 
 /* ------------- Section 2: UI tweaking --------------*/
+
+/*title bar */
+.titlebar{
+    background-color:  var(--tabs);
+}
+.titlebar-inner{
+    color: var(--text-normal);
+}
 
 /* add 1px border on the top edge because otherwise it looks wired in Windows*/
 .app-container{
