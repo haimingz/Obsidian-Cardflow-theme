@@ -90,8 +90,8 @@ so it look like editing plain text */
 
 .markdown-preview-view{
     font-family: var(--preview-font);
+    padding: 20px !important;
 }
-
 
 /* headers */
 
@@ -202,6 +202,11 @@ blockquote{
     overflow-x:auto;
     overflow-y:hidden;
 }
+
+.CodeMirror-lines{
+    padding-top: 0px;
+}
+
 /* Set the minimum width of the cards when overflowing
 (One known problem is that one cannot drag the cards wider) */
 .workspace-split > .workspace-leaf,
@@ -223,9 +228,6 @@ blockquote{
 .workspace-leaf.mod-active{ background: var(--content-active);}
 
 
-.markdown-preview-view{
-    padding: 0px 25px;
-}
 .markdown-source-view{
     padding: 15px 25px;
 }
@@ -246,12 +248,14 @@ blockquote{
 /* Embed content */
 .markdown-embed{
     padding: 0px !important;
-    margin: 20px 0px !important;
-    border-radius: 4px !important;
+    margin: 0px 20px !important;
+    border-radius: 0px !important;
+    border: solid var(--border) !important;
+    border-width: 1px !important;
     background: transparent !important;
 }
 .markdown-embed-content{
-    padding: 0px 15px !important;
+    padding: 0px 0px !important;
 }
 .markdown-embed-title{
     padding-top: 3px !important;
@@ -271,9 +275,9 @@ blockquote{
 }
 
 /* Popover */
-.popover.hover-popover{
+.popover.hover-popover.is-loaded{
     background-color: var(--content-active);
-    border: solid var(--border) !important;
+    border-bottom: solid var(--border) !important;
     border-width: 1px !important;
     border-radius: 0px !important;
 }
