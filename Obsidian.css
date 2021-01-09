@@ -186,9 +186,14 @@ blockquote{
     padding: 15px 20px !important;
 }
 
+
 /*title bar */
 .titlebar{
     background-color:  var(--tabs);
+    border-top: solid var(--border) !important;
+    border-left: solid var(--border) !important;
+    border-right: solid var(--border) !important;
+    border-width:1px !important; 
 }
 .titlebar-inner{
     color: var(--text-normal);
@@ -311,10 +316,12 @@ blockquote{
 }
 .workspace-ribbon.mod-left{
     border-right: solid var(--border)  !important;
+    border-left: solid var(--border)  !important;
     border-width: 1px !important;
 }
 .workspace-ribbon.mod-right{
     border-left: solid var(--border)  !important;
+    border-right: solid var(--border)  !important;
     border-width: 1px !important;
 }
 .side-dock-settings{
