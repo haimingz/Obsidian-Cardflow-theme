@@ -20,21 +20,9 @@
 
 /* Define font families as you like */
 .theme-light,.theme-dark{
-    --preview-font:'Roboto','Ubuntu','-apple-system','Source Han Sans','思源黑体','Microsoft Yahei';
-    --edit-font: 'Roboto', 'Ubuntu','-apple-system','Source Han Sans','思源黑体','Microsoft Yahei';
+    --preview-font: 'Source Serif Pro','Roboto','Ubuntu','-apple-system','Source Han Sans','思源黑体','Microsoft Yahei';
+    --edit-font: 'Source Serif Pro','Roboto', 'Ubuntu','-apple-system','Source Han Sans','思源黑体','Microsoft Yahei';
 }
-
-/* Hide things */
-
-.status-bar{
-    display:none; 
-}
-
-/* Uncomment this to hide scrollbars 
-::-webkit-scrollbar{
-    display:none; 
-}*/
-
 
 /* ------------Section 1: Markdown Styles -------------*/
 
@@ -70,7 +58,7 @@ so it look like editing plain text */
 .cm-header-5,
 .cm-header-6,
 .cm-math{
-    line-height: 1.65rem !important;
+    line-height: 1.5rem !important;
     font-size: 1.0rem !important;
     padding-top: 0 !important;
     padding-bottom: 0 !important;
@@ -90,7 +78,6 @@ so it look like editing plain text */
 
 .markdown-preview-view{
     font-family: var(--preview-font);
-    padding: 20px !important;
 }
 
 /* headers */
@@ -183,6 +170,22 @@ blockquote{
 
 /* ------------- Section 2: UI tweaking --------------*/
 
+/* Hide things */
+
+.status-bar{
+    display:none; 
+}
+
+/* Uncomment this to hide scroll-bars  */
+
+::-webkit-scrollbar{
+    display:none; 
+}
+
+.markdown-preview-view{
+    padding: 15px 20px !important;
+}
+
 /*title bar */
 .titlebar{
     background-color:  var(--tabs);
@@ -194,14 +197,17 @@ blockquote{
 /* add 1px border on the top edge because otherwise it looks wired in Windows*/
 .app-container{
     border-top: solid var(--border) !important;
-    border-width:1px !important; 
+    border-top-width:1px !important; 
 }
-
+.is-frameless.mod-windows{
+    padding-top: 23px !important;
+}
 /* Flow of cards */
 .workspace-split.mod-vertical{
     overflow-x:auto;
     overflow-y:hidden;
 }
+
 
 .CodeMirror-lines{
     padding-top: 0px;
@@ -211,7 +217,7 @@ blockquote{
 (One known problem is that one cannot drag the cards wider) */
 .workspace-split > .workspace-leaf,
 .workspace-split > .workspace-split{
-    min-width: 550px; /* Change this value as you wish */
+    min-width: 500px; /* Change this value as you wish */
 }
 /*Content Card*/
 .view-header{
@@ -229,7 +235,8 @@ blockquote{
 
 
 .markdown-source-view{
-    padding: 15px 25px;
+    padding: 15px 15px;
+    margin: 15px 0px
 }
 
 
@@ -399,6 +406,7 @@ blockquote{
     background:var(--border) ;
     width:1px;
     height: 100%;
+    top: 0px !important;
 }
 .workspace-tabs,
 .workspace-leaf,
